@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/profile.css')}}">
+    <title>Profile</title>
+{% endblock %}
+
+{% block body %}
+    <div class="background">
+        <div class="image-id">
+            <img src="static\images\2x2 a.jpg" alt="">
+            <h2>2024-04854-MN-0</h2>
+            <h4>(Student No.)</h4>
+        </div>
+        <div class="personal-details">
+            <div class="field"> 
+                <h2>John Carlo Reuel V. Bulatao</h2>
+                <h4>(Name)</h4>
+            </div>
+                <div class="row">
+                    <div class="field">
+                        <h2>20</h2>
+                        <h4>(Age)</h4>
+                    </div>
+                    <div class="field">
+                        <h2>August 21, 2005</h2>
+                        <h4>(Birth Date)</h4>
+                    </div>
+                </div>
+        </div>
+
+{% endblock %}
+

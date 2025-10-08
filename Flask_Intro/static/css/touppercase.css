@@ -1,0 +1,18 @@
+.background {
+    width: 65vw;
+    min-height: 50vh;
+    margin: 8rem auto 2em auto;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+    padding: 1rem;
+    gap: 1rem;
+}

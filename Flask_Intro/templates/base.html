@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/base.css')}}" >
+    {% block head %} {% endblock %}
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    {% include 'navbar.html' %}
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="static/videos/bg1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Area -->
+    {% block body %}{% endblock %}
+    
+</body>
+</html>

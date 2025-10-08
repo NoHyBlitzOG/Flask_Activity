@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="static/css/touppercase.css">
+<title>Upper Case function</title>
+{% endblock %}
+
+{% block body %}
+ <div class="background">
+    <h1>Convert String to Uppercase</h1>
+
+    <form action="/touppercase" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <p>Converted string: {{ result }}</p>
+    {% endif %}
+
+ </div>
+{% endblock %}

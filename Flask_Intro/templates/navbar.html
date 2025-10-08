@@ -1,0 +1,22 @@
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/navbar.css')}}" >
+{% endblock %}
+
+{% block body %}
+<nav>
+        <a href="/" id="logo">DSA.
+            <h4>Data Structure & Algorithms</h4>
+        </a>
+        <ul id="nav-list">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#works">Works</a>
+                <ul id="works-dropdown">
+                    <li><a href="/works">toUpperCase</a></li>
+                    <li><a href="/areaofcircle">Area of a Circle</a></li>
+                    <li><a href="/areaoftriangle">Area of a Triangle</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+</nav>
+{% endblock %}

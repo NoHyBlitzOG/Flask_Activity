@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block head %}
+<link rel="stylesheet" href="static/css/touppercase.css">
+<title>Area of Circle function</title>
+{% endblock %}
+
+{% block body %}
+ <div class="background">
+    <h1>Get Area of Circle</h1>
+
+    <form action="/areaofcircle" method="post">
+        <label for="area_result">Enter a value:</label>
+        <input type="text" id="area_result" name="area_result">
+        <input type="submit" value="Convert">
+    </form>
+
+    {% if result %}
+    <p>Area of Circle: {{result}} </p>
+    {% endif %}
+
+ </div>
+{% endblock %}

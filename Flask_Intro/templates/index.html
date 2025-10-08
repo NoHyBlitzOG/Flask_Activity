@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Home Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css')}}" >
+{% endblock %}
+
+{% block body %}
+<div class="background">
+    <div class="content">
+        <h2>Hello User!</h2>
+        <h4>Welcome to my personal webpage. Feel free to explore around</h4>
+    </div>
+    <h1>Works</h1>
+    <section id="works">
+        <div class="image-row">
+            <div class="img-box">
+                <a href="/works"><img src="{{ url_for('static', filename='images/errol-anas-hexcore-3.jpg') }}" alt="icon1"></a>
+                <<span class="overlay-text">To UpperCase Function</span>
+            </div>
+
+            <div class="img-box">
+                <a href="/areaofcircle"><img src="{{ url_for('static', filename='images/13.jpg') }}" alt="icon2"></a>
+                <span class="overlay-text">Area of a Circle</span>
+            </div>
+
+            <div class="img-box">
+                <a href="/areaoftriangle"><img src="{{ url_for('static', filename='images/12.jpg') }}" alt="icon3"></a>
+                <span class="overlay-text">Area of a Triangle</span>
+            </div>
+        </div>
+    </section>
+
+    <a href="/surprise"><button id="surprise-btn" style="border-radius: 5px;">Click here for a Surprise!</button></a>
+
+    <h1>LOREM iPSUM</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur velit doloremque veritatis placeat beatae in ratione. Praesentium molestiae ad dolores veritatis! Distinctio in sunt vel reiciendis harum tenetur ipsum quis.
+    Ipsa reprehenderit cum debitis, ex ipsum aspernatur quibusdam consequatur labore repellendus autem maxime inventore distinctio saepe est cumque modi facere dignissimos necessitatibus eveniet id voluptatibus! Ipsa quis harum nisi reiciendis!
+    Quibusdam eum ex ratione cumque excepturi, debitis sed sint possimus! Nam laborum ullam voluptatibus recusandae. Saepe nostrum fugiat provident rerum repellat et magni autem accusamus incidunt, ex, explicabo obcaecati error.
+    Exercitationem eos et cum natus impedit, a excepturi officia ad fugiat consequatur accusamus debitis! Excepturi culpa vel recusandae suscipit dolorum aliquid illum reiciendis inventore, iusto vitae veniam minima, voluptatum provident.
+    Rerum asperiores architecto deleniti obcaecati nisi minima modi perspiciatis iusto vel maiores, ab sit vero officiis, saepe veniam cum suscipit animi, consequatur libero. Officia inventore fuga dolores possimus quaerat ad.
+    Illum minima cumque quaerat, unde sunt inventore rerum sint voluptas eligendi veniam in tempore explicabo illo aliquam eum. Illo, dolor! Sit, vero enim necessitatibus ipsum voluptates obcaecati repudiandae? Sequi, aliquam?
+    Dolorem saepe eius eos dolor rem hic sequi. Maxime quia id hic. Aperiam, perferendis cum harum omnis modi quod autem? Laborum sunt eaque ex porro optio nostrum aliquam quae deserunt.
+    Eius facere qui animi, sequi reiciendis praesentium ipsam excepturi non fugiat accusamus autem explicabo soluta repellat corporis velit tempore perferendis quidem molestiae cum id saepe nobis exercitationem aut. Non, voluptatum?
+    Fuga nesciunt, saepe minus repellat voluptatibus, ea recusandae debitis rerum veniam eveniet quo! Qui deleniti cum harum esse? Neque a est modi, laudantium consequuntur illum sit? Assumenda quos iure et!
+    Dolore doloribus corrupti officia. Totam ratione sed excepturi unde odio corporis architecto, ipsam pariatur porro magni repudiandae quae reprehenderit quo distinctio impedit dignissimos aperiam facilis. Voluptas adipisci quod nesciunt dolorem!</p>
+
+<footer>&copy; 2025 FreakyZen Bisakol Club&trade;. All rights Reserved</footer>
+
+{% endblock %}
