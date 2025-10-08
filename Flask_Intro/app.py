@@ -10,8 +10,8 @@ def index():
 def profile():
     return render_template('profile.html')
 
-@app.route('/works', methods=['GET', 'POST'])
-def works():
+@app.route('/touppercase', methods=['GET', 'POST'])
+def touppercase():
     result = None
     if request.method == 'POST':
         input_string = request.form.get('inputString', '')
